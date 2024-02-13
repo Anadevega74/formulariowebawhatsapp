@@ -17,15 +17,15 @@ document.querySelector("#submit").addEventListener("click", e => {
     const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
           *_MI NEGOCIO_*%0A
           *Reservas*%0A%0A
-          *¿Cuál es tu nombre?*%0A
+          *¿Cómo te llamas?
           ${cliente}%0A
-          *Indica la fecha de tu reserva*%0A
+          *¿Cuándo quieres reservar?*%0A
           ${fecha}%0A
-          *Indica la hora de tu reserva*%0A
+          *¿A qué hora quieres reservar?*%0A
           ${hora}%0A
           *Empleado de preferencia*%0A
           ${empleado}%0A
-          *¿Cuál es el servicio que deseas realizar?*%0A
+          *¿Qué servicio quieres realizar?*%0A
           ${servicio}`;
   
     if (cliente === "" || fecha === "" || hora === "") {
